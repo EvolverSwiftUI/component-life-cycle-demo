@@ -23,7 +23,9 @@ class App extends Component {
         <button onClick={this.onToggleClock}>
           { showClock ? "Hide Clock" : "Show Clock" }
         </button>
-        <Clock />
+        {/* short hand notation to toggle Clock comp */}
+        {showClock && <Clock />} 
+        {/* <Clock /> */}
       </div>
     )
   }
